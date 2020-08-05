@@ -1,0 +1,365 @@
+<!--
+@author Isaac Muendo
+@email  isaac.muendo.official@gmail.com
+@create date 2020-07-17 10:45:12
+@modify date 2020-07-28 19:06:30
+@description Ryana Calendars - Journals page
+-->
+
+
+<!----------------------TABLE OF CONTENTS------------------------>
+<!--
+    1. HEADER-----------------------------------(Line 47-74)
+        (I)     Ryana calendars logo -----------(Line 49-53)
+        (II)    Navigation bar------------------(Line 55-72)
+
+    2. PRODUCTS---------------------------------(Line 76-327)
+        (I)     Product type--------------------(Line 78-82)
+        (II)    Product grid--------------------(Line 84-325)
+
+    3. FOOTER-----------------------------------(Line 329-349)
+        (I)     Ryana calendars logo------------(Line 332-338)
+        (II)    Copyright-----------------------(Line 340-346)
+        
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryana calendars - Journals</title>
+
+  <!--External CSS-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  
+  <!--External icons from fontawesome.com-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <!--------------------------1. HEADER------------------------------>
+  <div class="header">
+    <!--(I) Ryana calendars logo-->
+    <div class="left">
+      <p><span>Ryana</span>Calendars</p>
+    </div>
+    <!-- Ryana calendars logo ends here-->
+
+    <!--(II) Navigation bar-->
+    <div class="right">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Overview</a></li>
+        <li>
+          <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shop<i class="fa fa-angle-down"
+              aria-hidden="true"></i></a>
+          <ul class="dropdown" aria-label="submenu">
+            <li><a href="journals.html">Journals</a></li>
+            <li><a href="diaries.html">Diaries</a></li>
+            <li><a href="calendars.html">Calendars</a></li>
+          </ul>
+        </li>
+        <li><a href="location.html"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</a></li>
+
+      </ul>
+    </div>
+    <!--Navigation bar ends here-->
+  </div>
+  <!--------------------------END OF HEADER------------------------------>
+
+  <!--------------------------2. PRODUCTS---------------------------------->
+  <div class="products">
+    <!--(I) Product type-->
+    <div class="product-type">
+      <h1>JOURNALS</h1>
+    </div>
+    <!--Product type ends here-->
+
+    <!--(II) Product grid-->
+    <div class="grid">
+
+    <!-- Product 1-->
+      <!--Product card-->
+      <div class="product-card">
+
+        <!--Product image-->
+        <div class="product-image">
+          <img src="assets/images/journals/1.png" alt="Journal" style="width: 100%;">
+        </div>
+
+        <!--Product details-->
+        <div class="product-details">
+          <h1>#1. Journal</h1>
+          <p class="price">$ 30.00</p>
+
+          <!--Product checkout button-->
+          <div class="shop-now"><button>Shop now</button></div>
+        </div>
+      </div>
+
+      <!--Product view-->
+      <div class="product-view">
+
+        <!--Cancel/Exit button-->
+        <div class="close-btn">X</div>
+
+
+        <!--Product image (400px x 400px)-->
+        <div class="product-big-image">
+          <img src="assets/images/product-view/journals/1.png" alt="journal">
+        </div>
+
+        <!--Product description-->
+        <div class="product-big-description">
+          <h2>#1.JOURNAL</h2>
+          <h5>Product ID: 010001</h5>
+          <h6>You can write anything on this journal. Keep a record of your life for future generations.</h6>
+
+          <!--Product price-->
+          <div class="price">
+            <h4 class="actualprice">$ 30.00</h4>
+            <!--TODO: Add an <abbr> with additional price for shipping-->
+          </div>
+
+          <!-- Product check out button
+                  NOTE: When the checkout button is clicked an alert is shown on 
+                  the top of the webpage of the browser
+          -->
+          <button class="checkoutbtn" onclick="journal()">CHECKOUT</button>
+
+          <!--Download price list button -->
+          <button class="downloadbtn">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <!--NOTE: This links to the individual document of this particular product-->
+            <a href="pricelist/journals/journals1.doc" download>DOWNLOAD</a>
+          </button>
+        </div>
+      </div>
+    <!-- End of product 1-->
+
+    <!-- Product 2-->
+      <!--Product card-->
+      <div class="product-card">
+
+        <!--Product image-->
+        <div class="product-image">
+          <img src="assets/images/journals/2.png" alt="Journal" style="width: 100%;">
+        </div>
+
+        <!--Product details-->
+        <div class="product-details">
+          <h1>#2. Journal</h1>
+          <p class="price">$ 30.00</p>
+
+          <!--Product checkout button-->
+          <div class="shop-now"><button>Shop now</button></div>
+        </div>
+      </div>
+
+      <!--Product view-->
+      <div class="product-view">
+
+        <!--Cancel/Exit button-->
+        <div class="close-btn">X</div>
+
+
+        <!--Product image (400px x 400px)-->
+        <div class="product-big-image">
+          <img src="assets/images/product-view/journals/2.png" alt="journal">
+        </div>
+
+        <!--Product description-->
+        <div class="product-big-description">
+          <h2>#2.JOURNAL</h2>
+          <h5>Product ID: 010002</h5>
+          <h6>You can write anything on this journal. Keep a record of your life for future generations.</h6>
+
+          <!--Product price-->
+          <div class="price">
+            <h4 class="actualprice">$ 30.00</h4>
+            <!--TODO: Add an <abbr> with additional price for shipping-->
+          </div>
+
+          <!-- Product check out button
+              NOTE: When the checkout button is clicked an alert is shown on 
+              the top of the webpage of the browser
+          -->
+          <button class="checkoutbtn" onclick="journal()">CHECKOUT</button>
+
+          <!--Download price list button -->
+          <button class="downloadbtn">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <!--NOTE: This links to the individual document of this particular product-->
+            <a href="pricelist/journals/journals2.doc" download>DOWNLOAD</a>
+          </button>
+        </div>
+      </div>
+    <!-- End of product 2-->
+
+
+    <!-- Product 3-->
+      <!--Product card-->
+      <div class="product-card">
+
+        <!--Product image-->
+        <div class="product-image">
+          <img src="assets/images/journals/3.png" alt="Journal" style="width: 100%;">
+        </div>
+
+        <!--Product details-->
+        <div class="product-details">
+          <h1>#3. Journal</h1>
+          <p class="price">$ 30.00</p>
+
+          <!--Product checkout button-->
+          <div class="shop-now"><button>Shop now</button></div>
+        </div>
+      </div>
+
+      <!--Product view-->
+      <div class="product-view">
+
+        <!--Cancel/Exit button-->
+        <div class="close-btn">X</div>
+
+
+        <!--Product image (400px x 400px)-->
+        <div class="product-big-image">
+          <img src="assets/images/product-view/journals/3.png" alt="journal">
+        </div>
+
+        <!--Product description-->
+        <div class="product-big-description">
+          <h2>#3.JOURNAL</h2>
+          <h5>Product ID: 010003</h5>
+          <h6>You can write anything on this journal. Keep a record of your life for future generations.</h6>
+
+          <!--Product price-->
+          <div class="price">
+            <h4 class="actualprice">$ 30.00</h4>
+            <!--TODO: Add an <abbr> with additional price for shipping-->
+          </div>
+
+          <!-- Product check out button
+                      NOTE: When the checkout button is clicked an alert is shown on 
+                      the top of the webpage of the browser
+                    -->
+          <button class="checkoutbtn" onclick="journal()">CHECKOUT</button>
+
+          <!--Download price list button -->
+          <button class="downloadbtn">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <!--NOTE: This links to the individual document of this particular product-->
+            <a href="pricelist/journals/journals3.doc" download>DOWNLOAD</a>
+          </button>
+        </div>
+      </div>
+    <!-- End of product 3-->
+
+
+    <!-- Product 4-->
+      <!--Product card-->
+      <div class="product-card">
+
+        <!--Product image-->
+        <div class="product-image">
+          <img src="assets/images/journals/4.png" alt="Journal" style="width: 100%;">
+        </div>
+
+        <!--Product details-->
+        <div class="product-details">
+          <h1>#4. Journal</h1>
+          <p class="price">$ 30.00</p>
+
+          <!--Product checkout button-->
+          <div class="shop-now"><button>Shop now</button></div>
+        </div>
+      </div>
+
+      <!--Product view-->
+      <div class="product-view">
+
+        <!--Cancel/Exit button-->
+        <div class="close-btn">X</div>
+
+
+        <!--Product image (400px x 400px)-->
+        <div class="product-big-image">
+          <img src="assets/images/product-view/journals/4.png" alt="journal">
+        </div>
+
+        <!--Product description-->
+        <div class="product-big-description">
+          <h2>#4.JOURNAL</h2>
+          <h5>Product ID: 010004</h5>
+          <h6>You can write anything on this journal. Keep a record of your life for future generations.</h6>
+
+          <!--Product price-->
+          <div class="price">
+            <h4 class="actualprice">$ 30.00</h4>
+            <!--TODO: Add an <abbr> with additional price for shipping-->
+          </div>
+
+          <!-- Product check out button
+                        NOTE: When the checkout button is clicked an alert is shown on 
+                        the top of the webpage of the browser
+                      -->
+          <button class="checkoutbtn" onclick="journal()">CHECKOUT</button>
+
+          <!--Download price list button -->
+          <button class="downloadbtn">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <!--NOTE: This links to the individual document of this particular product-->
+            <a href="pricelist/journals/journals4.doc" download>DOWNLOAD</a>
+          </button>
+        </div>
+      </div>
+    <!-- End of product 4-->
+   </div>
+   <!-- Product grid ends here-->
+  </div>
+<!-------------------------- PRODUCTS END HERE---------------------------------->
+
+<!--------------------------3. FOOTER---------------------------------->
+  <footer>
+
+    <!--(I) Ryana calendars logo-->
+    <div class="left">
+      <div class="logo">
+        <p><span>Ryana</span>Calendars</p>
+      </div>
+    </div>
+    <!-- Ryana calendars logo ends here-->
+
+    <!--(II) Copyright-->
+    <div class="right">
+      <div class="copyright">
+        <p>&copy; 2020 Isaac Muendo. All Rights Reserved</p>
+      </div>
+    </div>
+    <!--Copyright ends here-->
+
+  </footer>
+<!--------------------------FOOTER ENDS HERE---------------------------------->
+  
+<!--External Javascript-->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+  <!--This modal script is holds the functions for the shop now button in the product card and the close button in the product view -->
+  <script type="text/javascript" src="assets/js/modal.js"></script>
+
+<!--Internal Javascript-->
+   <!--This script holds functions for the checkout button-->
+  <script>
+    function journal() {
+      alert('Thank you for purchasing the journal')
+    }
+  </script>
+</body>
+</html>

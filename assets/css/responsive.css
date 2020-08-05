@@ -1,0 +1,56 @@
+/*This breakpoint is applied when at 755px width screen size.*/
+@media only screen and (max-width: 755px){
+
+    /*Size of the header's font*/
+    .header{
+        font-size: 14px;
+    }
+    
+    /*Ryana calendars logo*/
+    .header .left{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+    .header .left p span{ /*Ryana*/
+        color: #ffd000;
+        font-size: 24px;
+        font-family: "Josefin sans", cursive;
+    }
+
+    .header .left  p{/*Calendars*/
+        font-size: 24px;
+        font-weight: bold;
+        color: #494949;
+        font-family: "Josefin sans", cursive;
+        margin-right: 25px;
+    }
+    
+    /*Navigation bar*/
+    .header .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header .right ul{
+        float: none;
+        margin-right: 0px;
+      }
+
+}
+
+/*This breakpoint is applied when at 435px width screen size.*/
+@media only screen and (max-width: 435px){
+    .header{
+        font-size: 12px;
+    }
+
+    .header .left p{
+        margin-bottom: 1%;
+    }
+      /*Navigation bar*/
+    .header .right ul li{
+        display: block;
+    }
+}

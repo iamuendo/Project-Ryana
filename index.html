@@ -1,0 +1,206 @@
+<!--
+@author Isaac Muendo
+@email  isaac.muendo.official@gmail.com
+@create date 2020-07-17 10:45:12
+@modify date 2020-07-28 19:06:30
+@desc Ryana Calendars
+-->
+
+<!--------------------TABLE OF CONTENTS------------------------->
+<!--
+    1. HEADER-----------------------------------(Line 43-88)
+        (I)     Logo----------------------------(Line 46-50)
+        (II)    Navigation bar------------------(Line 52-86)
+
+    2. SHOWCASE---------------------------------(Line 90-104)
+        (I)     Banner--------------------------(Line 94-100)
+
+    3. PRODUCTS OVERVIEW------------------------(Line 106-187)
+        (I)     Journals overview---------------(Line 111-134)
+        (II)    Diary overview------------------(Line 136-159)
+        (III)   Calendars overview--------------(Line 161-184)
+    
+    4. FOOTER-----------------------------------(Line 189-209)
+        (I)     Ryana calendars logo------------(Line 192-198)
+        (II)    Copyright-----------------------(Line 200-206)
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryana calendars - Home </title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!--External icons from fontawesome.com-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--------------------------1. HEADER------------------------------>
+    <div class="header">
+
+      <!--(I) Logo starts here-->
+      <div class="left">
+        <p><span>Ryana</span>Calendars</p>
+      </div>
+      <!--Logo ends here-->
+
+      <!--(II) Navigation bar-->
+      <div class="right">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa fa-home" aria-hidden="true"></i>Overview</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shop<i
+                class="fa fa-angle-down"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <!--Drop down-->
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="journals.html">Journals</a></li>
+              <li><a href="diaries.html">Diaries</a></li>
+              <li><a href="calendars.html">Calendars</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="location.html"
+              ><i class="fa fa-map-marker" aria-hidden="true"></i>Location</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--Navigation bar starts here-->
+    </div>
+    <!--------------------------END OF HEADER------------------------------>
+
+    <!-------------------------2. SHOWCASE--------------------------------->
+    <div class="showcase" style="background: url('assets/images/banner.png');">
+      <div class="container">
+
+        <!--(I) Banner-->
+        <div class="banner">
+          <h1>JOURNALS, DIARIES, CALENDARS</h1>
+          <p>And much more.</p>
+          <a href="#product-heading" class="shop">Shop now</a>
+        </div>
+         <!--Banner ends here-->
+
+      </div>
+    </div>
+    <!-----------------------SHOWCASE ENDS HERE---------------------------->
+
+    <!----------------------3. PRODUCTS OVERVIEW------------------------->
+    <div class="product-category">
+      <h1 id="product-heading">OUR PRODUCTS</h1>
+      <div class="products-grid">
+
+        <!-- (I) Journals overview-->
+        <div class="products-overview">
+          <div class="overview">
+            <div class="image">
+              <img
+                src="assets/images/overview/journals.png"
+                alt="journals"
+                style="width: 300px; height: 300px;"
+              />
+            </div>
+            <div class="content">
+              <h1>Journals</h1>
+              <p>
+                You can write anything on this journal. Keep a record of your
+                life for future generations.
+              </p>
+              <a href="journals.html"><button>View journals</button></a></p>
+            </div>
+          </div>
+          <div class="product-overview-label">
+            <h1>Journals</h1>
+          </div>
+        </div>
+        <!--Journal overview ends here-->
+
+        <!--(II) Diary overview-->
+        <div class="products-overview">
+          <div class="overview">
+            <div class="image">
+              <img
+                src="assets/images/overview/diaries.png"
+                alt="journals"
+                style="width: 300px; height: 300px;"
+              />
+            </div>
+            <div class="content">
+              <h1>Diaries</h1>
+              <p>
+                You can write anything on this diary. Keep a record of your life
+                for future generations.
+              </p>
+              <a href="diaries.html"><button>View diaries</button></a></p>
+            </div>
+          </div>
+          <div class="product-overview-label">
+            <h1>Diaries</h1>
+          </div>
+        </div>
+        <!--Diary overview ends here-->
+
+        <!--(III) Calendars overview-->
+        <div class="products-overview">
+          <div class="overview">
+            <div class="image">
+              <img
+                src="assets/images/overview/calendars.png"
+                alt="journals"
+                style="width: 300px; height: 300px;"
+              />
+            </div>
+            <div class="content">
+              <h1>Calendars</h1>
+              <p>
+                By purchasing a calendar, It speaks well of how you organize
+                yourself and how you keep a record of your daily milestones.
+              </p>
+              <a href="calendars.html"><button>View calendars</button></a></p>
+            </div>
+          </div>
+          <div class="product-overview-label">
+            <h1>Calendars</h1>
+          </div>
+        </div>
+        <!--Diary overview ends here-->
+      </div>
+    </div>
+    <!--PRODUCTS OVER VIEW ENDS HERE-->
+
+  <!--------------------------4. FOOTER---------------------------------->
+  <footer>
+
+    <!--(I) Ryana calendars logo-->
+    <div class="left">
+      <div class="logo">
+        <p><span>Ryana</span>Calendars</p>
+      </div>
+    </div>
+    <!-- Ryana calendars logo ends here-->
+
+    <!--(II) Copyright-->
+    <div class="right">
+      <div class="copyright">
+        <p>&copy; 2020 Isaac Muendo. All Rights Reserved</p>
+      </div>
+    </div>
+    <!--Copyright ends here-->
+
+  </footer>
+<!--------------------------FOOTER ENDS HERE---------------------------------->
+  </body>
+</html>

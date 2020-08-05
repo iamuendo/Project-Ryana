@@ -1,0 +1,567 @@
+/**
+ * @author Isaac Muendo
+ * @email  isaac.muendo.official@gmail.com
+ * @create date 2020-07-17 10:45:12
+ * @modify date 2020-07-28 19:06:30
+ * @desc Ryana Calendars
+ */
+
+
+
+/*----------TABLE OF CONTENTS-----------
+* --(1) GENERAL LAYOUT-----------------(Line 20 - )
+*-----A). Body-------------------------(Line 23 - 127)
+*-----B). Header-----------------------(Line 36 - 42)
+*--------(I).   Ryana calendars logo---(Line 21 - 34)
+*--------(II).  Navigation menu--------(Line 36 - 42)
+*-----C). Footer-----------------------(Line 36 - 42)
+*--------(I).   Ryana calendars logo---(Line 21 - 34)
+*--------(II).  Copyright--------------(Line 21 - 34)
+
+
+* --(2) HOMEPAGE-----------------------(Line 20 - )
+*-----A). Product showcase area--------(Line 23 - 127)
+*-----B). Banner-----------------------(Line 36 - 42)
+*--------(I).   Caption----------------(Line 21 - 34)
+*--------(II).  Shop now button--------(Line 21 - 34)
+*-----C). Product category area--------(Line 36 - 42)
+*--------(I)   Product heading---------(Line 21 - 34)
+*--------(II)  Product overview grid---(Line 21 - 34)
+*--------(III) Product overview--------(Line 21 - 34)
+
+
+* --(3) PRODUCT PAGES------------------(Line 346 - 531)
+*-----A). Products area----------------(Line 347 - 352)
+*-----B). Products grid area-----------(Line 360 - 367)
+*-----C). Products card area-----------(Line 369 - 376)
+*-----D). Product details--------------(Line 378 - 385)
+*-----E). Product view area------------(Line 36 - 42)
+
+
+*--(4) CONTACT US PAGE-----------------(Line 533 - 573)
+*-----A). Contact us form--------------(Line 538 - 545)
+*-----B). Contact us form fields-------(Line 547 - 558)
+
+*--(5) SHOP LOCATION PAGE--------------(Line 576 - 590)
+*/
+
+/*External fonts from googlefonts.com */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Mountains+of+Christmas&display=swap");
+
+/* -----------1. GENERAL LAYOUT----------*/
+/*--A). Body -- */
+body {
+  margin: 0;
+}
+
+* {  /*This style will be applied across the website*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  /*These fonts are uniform across the entire website*/
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*--B). Header -- */
+.header {
+  width: 100%;
+  float: left;
+  text-align: center;
+  background-color: #fff;
+}
+
+/*--(I). Ryana Calendars logo -- */
+.header .left {
+  padding: 25px;
+  width: 30%;
+  float: left;
+}
+
+.header .left p span {
+  /*Ryana*/
+  color: #ffd000;
+  font-size: 24px;
+  font-family: "Josefin sans", cursive;
+}
+
+.header .left p {
+  /*Calendars*/
+  font-size: 24px;
+  font-weight: bold;
+  color: #494949;
+  font-family: "Josefin sans", cursive;
+  margin-right: 25px;
+}
+
+/*--(II). Navigation menu -- */
+.header .right {
+  float: left;
+  width: 70%;
+}
+
+.header .right ul {
+  margin-right: 10%;
+  padding: 10px;
+  float: right;
+  text-align: center;
+}
+
+.header .right ul li {
+  cursor: pointer;
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px;
+}
+
+.header .right ul li i {
+  padding: 10px;
+}
+
+.header .right ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Drop down menu */
+.header .right ul li ul {
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+
+  display: block;
+}
+.header .right ul li:hover > ul,
+.header .right ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.header .right ul li ul li {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.header .right ul li ul li a:hover,
+a:focus-within {
+  color: #ffc400;
+}
+/*--HEADER ENDS HERE-- */
+
+/*--C). Footer -- */
+footer {
+  margin-top: 5px;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*--(I). Ryana Calendars logo -- */
+footer .left {
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer .left .logo p span {
+  color: #ffd000;
+  font-family: "Josefin sans", cursive;
+}
+
+footer .left .logo p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #494949;
+  font-family: "Josefin sans", cursive;
+  margin-right: 25px;
+}
+/*-- Ryana Calendars logo ends here -- */
+
+/*--(II). Copyright -- */
+footer .right .copyright {
+  padding: 10px;
+  display: flex;
+}
+/*-- Copyright ends here -- */
+
+/*---------Footer ends here---------*/
+/*------- GENERAL LAYOUT ENDS HERE -------- */
+
+/* -----------2. HOMEPAGE----------*/
+/*--A). Product showcase area -- */
+.showcase {
+  width: 100%;
+  height: 100vh;
+}
+
+/*--B). Banner -- */
+.showcase .banner {
+  color: black;
+  width: 100%;
+  padding-top: 300px;
+  padding-left: 50px;
+}
+
+/*(I) Caption*/
+.showcase .banner h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.showcase .banner p {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+/*(II) Shop now button*/
+.showcase .banner a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.showcase .banner .shop {
+  padding: 10px 30px;
+  background-color: #ffc400;
+  border: 2px solid #ffc400;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/*--C). Product category area-- */
+.product-category {
+  margin: 30px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+/*(I) Product heading */
+.product-category #product-heading {
+  padding-top: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/*(II) Product overview grid */
+.product-category .products-grid {
+  width: 100%;
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+/*(III) Product overview */
+.product-category .products-grid .products-overview {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-category .products-overview .product-overview-label {
+  padding: 30px;
+}
+
+.product-category .products-overview .overview {
+  /* This is the container for the flipping cards */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.products-overview:hover .overview {
+  /* When you hover the mouse on the card it will flip */
+  transform: rotateY(180deg);
+}
+
+/*Product overview image*/
+.product-category .products-overview .overview .image,
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.product-category .products-overview .overview .image {
+  /* The style applied here is an alternative of when an image is not present */
+  background-color: #bbb;
+  color: #000;
+}
+
+.product-category .products-overview .overview .content {
+  /* This style applies to the backside of the flip card */
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg);
+}
+
+.product-category .products-overview .overview .content h1 {
+  padding-top: 80px;
+}
+
+/*Product overview button*/
+.product-category .products-overview .overview .content  button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  margin-top: 100px;
+  padding: 10px;
+  color: #000;
+  background-color: #ffc400;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+/*--------------- HOMEPAGE ENDS HERE ------------------ */
+
+/*----------------3. PRODUCT PAGES--------------------*/
+/*--A). Products area-- */
+.products {
+  margin: 30px; /*Around the products area*/
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.products .product-type {
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*--B). Products grid area-- */
+.products .grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*--C). Products card area-- */
+.products .grid .product-card {
+  width: 300px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px 20px;
+  background: #fafafa;
+}
+
+/*Product grid image*/
+.products .grid .product-card .product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 50px;
+}
+
+.products .grid .product-card .product-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*--D). Product details --*/
+.products .grid .product-card .product-details {
+  padding: 30px;
+}
+
+.products .grid .product-card .product-details h1 {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+
+.products .grid .product-card .product-details p {
+  color: #000;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+/* Shop now button */
+.products .grid .product-card .product-details .shop-now button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #000;
+  background-color: #ffc400;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.products .grid .product-card .product-details .shop-now button:hover {
+  opacity: 0.7;
+}
+
+/*--E). Product view area-- */
+.product-view{
+  position: absolute;
+  display: none;
+  width: 800px;
+  height: auto;
+  padding: 50px;
+  border: 1px solid #ffc400;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  box-shadow: 0 5px 25px rgb(0,0,0,0.3);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 100;
+}
+
+/*Product view exit button*/
+.close-btn{
+  cursor: pointer;
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  top: 0;
+  font-size: 22px;
+  color: #3d3a3a;
+  margin: 5px 10px 0;
+  transform: scaleY(0.8);
+}
+
+/*Product view image*/
+.product-big-image{
+  width: 45%;
+  height: auto;
+  display: block;
+  float: left;
+}
+
+.product-big-image img{
+  width: 100%;
+}
+
+/*Product view description*/
+.product-big-description{
+  line-height: 20px;
+  padding: 30px;
+  width: 50%;
+  height: auto;
+  display: block;
+  float: right;
+}
+
+.product-big-description h2{
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.product-big-description h4{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.product-big-description h5{
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.product-big-description h6{
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+/*Product view checkout button*/
+.checkoutbtn{
+  padding: 15px;
+  border: none;
+  outline: 0;
+  background-color: #ffc400;
+} 
+
+.downloadbtn{
+  padding: 10px;
+  border: none;
+  outline: 0;
+  background-color: #ffc400;
+}
+
+.downloadbtn i{
+  padding: 5px;
+}
+
+.downloadbtn a{
+  text-decoration: none;
+  color: #000;
+}
+/*-------------- PRODUCT PAGE ENDS HERE ------------------ */
+
+
+
+/*----------------4. SHOP LOCATION PAGE--------------------*/
+.shop-location{
+  float: left;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+/*Contact heading*/
+.contact-heading{
+  padding-top: 200px;
+  text-align: center;
+}
+
+/*Email button*/
+.email{
+  margin-top: 30px;
+  margin-left: 400px;
+  padding: 10px;
+  border: none;
+  outline: 0;
+  background-color: #ffc400;
+}
+
+.email i{
+  padding: 5px;
+}
+
+.email a{
+  text-decoration: none;
+  color: #000;
+}
